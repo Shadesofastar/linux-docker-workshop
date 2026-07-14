@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>myapp</title>
+<!--
+  Change anything in this file, then rebuild with the two commands
+  from cheatsheet section 6: docker build -t myapp . and
+  docker run -d -p 8080:80 myapp
+-->
+<style>
+  body {
+    background: #0d1117;
+    color: #39ff88;
+    font-family: "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    color: #ff5cf1;
+    font-size: 1.8rem;
+  }
+  p {
+    max-width: 32rem;
+  }
+  .prompt {
+    color: #39ff88;
+  }
+  footer {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+</style>
+</head>
+<body>
+  <div style="font-size: 4rem;">🐧</div>
+  <h1>This page is served by my container</h1>
+  <p class="prompt">Open myapp/index.html, change something, then rebuild it. It is your container, do whatever you want with it.</p>
+  <footer>soar-3dc workshop, a SOAR and 3dc collaboration</footer>
+</body>
+</html>

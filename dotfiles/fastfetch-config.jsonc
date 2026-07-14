@@ -1,0 +1,20 @@
+// Lives at ~/.config/fastfetch/config.jsonc, apply with:
+// mkdir -p ~/.config/fastfetch && cp dotfiles/fastfetch-config.jsonc ~/.config/fastfetch/config.jsonc
+{
+  "logo": {
+    "source": "ubuntu",
+    "color": {
+      "1": "magenta"
+    }
+  },
+  "modules": [
+    "title",
+    "os",
+    "kernel",
+    "uptime",
+    "shell",
+    "terminal",
+    "memory",
+    "colors"
+  ]
+}
