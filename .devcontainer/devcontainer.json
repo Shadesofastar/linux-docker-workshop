@@ -2,13 +2,18 @@
   "name": "Linux and Docker Workshop (soar-3dc)",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
-  "forwardPorts": [8080],
+  "forwardPorts": [8080, 6080],
   "portsAttributes": {
     "8080": {
       "label": "your web app",
       "onAutoForward": "openPreview"
+    },
+    "6080": {
+      "label": "linux desktop (noVNC)",
+      "onAutoForward": "silent"
     }
   },
   "postCreateCommand": "bash .devcontainer/setup.sh"
