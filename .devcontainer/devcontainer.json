@@ -1,5 +1,5 @@
 {
-  "name": "Ubuntu Desktop (soar-3dc)",
+  "name": "Arch Desktop (soar-3dc)",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
@@ -7,7 +7,7 @@
   "forwardPorts": [3000, 3001],
   "portsAttributes": {
     "3000": {
-      "label": "Linux desktop (KDE)",
+      "label": "Linux desktop (Arch KDE)",
       "onAutoForward": "openPreview"
     },
     "3001": {
@@ -15,7 +15,7 @@
       "onAutoForward": "silent"
     }
   },
-  "postCreateCommand": "bash .devcontainer/setup.sh && docker pull lscr.io/linuxserver/webtop:ubuntu-kde || true",
+  "postCreateCommand": "bash .devcontainer/setup.sh && docker pull lscr.io/linuxserver/webtop:arch-kde || true",
   "postStartCommand": "bash .devcontainer/start-desktop.sh",
   "hostRequirements": {
     "cpus": 4,
