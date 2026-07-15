@@ -16,5 +16,9 @@
     }
   },
   "postCreateCommand": "bash .devcontainer/setup.sh && docker pull lscr.io/linuxserver/webtop:ubuntu-mate || true",
-  "postStartCommand": "bash .devcontainer/start-desktop.sh"
+  "postStartCommand": "bash .devcontainer/start-desktop.sh",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb"
+  }
 }
