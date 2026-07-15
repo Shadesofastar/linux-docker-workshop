@@ -7,7 +7,7 @@
   "forwardPorts": [3000, 3001],
   "portsAttributes": {
     "3000": {
-      "label": "Ubuntu desktop (webtop)",
+      "label": "Linux desktop (KDE)",
       "onAutoForward": "openPreview"
     },
     "3001": {
@@ -15,7 +15,7 @@
       "onAutoForward": "silent"
     }
   },
-  "postCreateCommand": "bash .devcontainer/setup.sh && docker pull lscr.io/linuxserver/webtop:ubuntu-mate || true",
+  "postCreateCommand": "bash .devcontainer/setup.sh && docker pull lscr.io/linuxserver/webtop:ubuntu-kde || true",
   "postStartCommand": "bash .devcontainer/start-desktop.sh",
   "hostRequirements": {
     "cpus": 4,
