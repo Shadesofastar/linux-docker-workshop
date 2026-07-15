@@ -126,3 +126,17 @@ Then build and run again with the same two commands above.
 ## 7. You cannot break anything
 
 If your codespace ever gets weird, go to github.com/codespaces, delete it, and create a new one. Everything in this repo comes back exactly as it was. Anything you personally created or edited in the codespace, your playground files, your index.html edits, is gone though, so keep anything you want to save somewhere else first.
+
+## 8. Bonus: a whole desktop in a container
+
+At the end of the session you will open a second codespace that runs a full Linux desktop in your browser.
+
+1. Open the repo in a new browser tab and switch the branch dropdown from main to ubuntu-desktop.
+2. Click the green Code button, pick the Codespaces tab, and create a codespace on ubuntu-desktop. Pick the 4-core machine if it asks.
+3. It takes a few minutes to build. Go back to what you were doing and check on it later.
+4. When it is ready, open the Ports tab, find port 3000 (Linux desktop (KDE)), and click the globe icon.
+5. Give it up to a minute, then you are looking at a complete Linux desktop, running inside a container.
+
+If the picture looks blurry or laggy, open the side panel (the small arrow tab on the left edge of the desktop page) and lower the stream quality, or just watch the projector.
+
+When you are done, stop or delete this codespace at github.com/codespaces. The 4-core machine uses your free quota faster than the main one.
