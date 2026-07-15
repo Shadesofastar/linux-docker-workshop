@@ -18,7 +18,7 @@
   "postCreateCommand": "bash .devcontainer/setup.sh && docker pull lscr.io/linuxserver/webtop:ubuntu-kde || true",
   "postStartCommand": "bash .devcontainer/start-desktop.sh",
   "hostRequirements": {
-    "cpus": 4,
+    "cpus": 12,
     "memory": "16gb"
   }
 }
